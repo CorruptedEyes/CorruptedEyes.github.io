@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('assets/fonts/Monocraft.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Monocrome';
+  src: url('assets/fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Monocrome', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1124;
+  color: #d0c4e3;
+  text-align: center;
+}
+
+header {
+  background: #2a1b3d;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  color: #b185db;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #9b6ed6;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #cca5ff;
+}
+
+section {
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Minecraft', sans-serif;
+  text-align: center;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+}
+
+.s_icon {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 10px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.resource-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #7d57c1;
+  color: #f0e6ff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+  height: 100px;
+  gap: 5px;
+}
+
+.resource-button:hover {
+  background-color: #6442a5;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7d57c1;
+  color: #f0e6ff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.download-button:hover {
+  background-color: #6442a5;
+}
+
+footer {
+  background: #2a1b3d;
+  padding: 1rem;
+  font-family: 'Minecraft', sans-serif;
+  text-align: center;
+}
