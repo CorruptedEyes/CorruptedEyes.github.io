@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: 'Minecraft';
   src: url('assets/fonts/Monocraft.ttf') format('truetype');
@@ -66,6 +68,12 @@ h1, h2, h3 {
   image-rendering: pixelated;
 }
 
+.ss_icon {
+  width: 24px;
+  height: 24px;
+  image-rendering: pixelated;
+}
+
 .button-grid {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
@@ -93,6 +101,7 @@ h1, h2, h3 {
 
 .resource-button:hover {
   background-color: #6442a5;
+  transition: all 0.3s ease;
 }
 
 .download-button {
@@ -108,6 +117,7 @@ h1, h2, h3 {
 
 .download-button:hover {
   background-color: #6442a5;
+  transition: all 0.3s ease;
 }
 
 footer {
@@ -115,4 +125,105 @@ footer {
   padding: 1rem;
   font-family: 'Minecraft', sans-serif;
   text-align: center;
+}
+
+.weapon-info {
+  display: none;
+  opacity: 0;
+  margin-top: 10px;
+}
+.weapon-info.show {
+  display: block;
+  opacity: 1;
+}
+.weapon-button {
+  font-family: 'Minecraft', sans-serif;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #7d57c1;
+  color: #260458;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.weapon-button:hover {
+  background-color: #260458;
+  color: #f0e6ff;
+  transition: all 0.3s ease;
+}
+
+.accordion {
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  padding: 15px;
+  background: #552765;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #190f2b;
+  color: #f0e6ff;
+  transition: all 0.3s ease;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background: #190f2b;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.card {
+  border: 3px solid #c95beb;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  background: #7b1978;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  image-rendering: pixelated;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.food-info {
+  display: none;
+  opacity: 0;
+  margin-top: 10px;
+}
+.food-info.show {
+  display: block;
+  opacity: 1;
 }

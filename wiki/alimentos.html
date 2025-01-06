@@ -21,10 +21,124 @@
 
   <section id="features">
     <h2><img src="../assets/images/alimentos.png" alt="ametista" class="s_icon"> --- Alimentos --- <img src="../assets/images/alimentos.png" alt="ametista" class="s_icon"></h2>
+
+    <button class="weapon-button" onclick="toggleInfo('bebida')">
+      <img src="../assets/images/alimentos.png" alt="ametista" class="s_icon"> 
+      <span>Bebidas</span>
+    </button>
+    <div id="bebida" class="food-info">
+      <div class="card-container">
+        <div class="card">
+          <img src="../assets/icons/vinho.png" alt="neutro">
+          <h3>Vinho Tinto</h3>
+          <p>Tem chance de dar fome ou nausea.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/vinho_brilhante.png" alt="neutro">
+          <h3>Vinho Brilhante</h3>
+          <p>Tem chance de dar fome, nausea ou visão noturna.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/bagas_licor.png" alt="neutro">
+          <h3>Licor de Bagas</h3>
+          <p>Tem chance de dar nausea ou velocidade.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/bagas_brilhantes_licor.png" alt="neutro">
+          <h3>Licor de Bagas brilhantes</h3>
+          <p>Tem chance de dar nausea ou visão noturna.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/maca_licor.png" alt="neutro">
+          <h3>Licor de Maçã</h3>
+          <p>Tem chance de dar nausea ou regeneração.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/maca_dourada_licor.png" alt="neutro">
+          <h3>Licor de Maçã Dourada</h3>
+          <p>Tem chance de dar nausea, regeneração ou resistencia.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/melancia_licor.png" alt="neutro">
+          <h3>Licor de Melancia</h3>
+          <p>Tem chance de dar nausea ou resistencia.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/redbull.png" alt="neutro">
+          <h3>Redbull</h3>
+          <p>Tem chance de dar levitação.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/redbull_cenoura.png" alt="neutro">
+          <h3>Redbull de Cenoura Dourada</h3>
+          <p>Da absorção e resistencia, e tem chance de dar levitação</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/honey_bottle.png" alt="neutro">
+          <h3>Sidra de Maçã</h3>
+          <p>Tem chance de dar velocidade ou wither.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/honey_bottle.png" alt="neutro">
+          <h3>Gin</h3>
+          <p>Tem chance de dar nausea ou heroi da vila.</p>
+        </div>
+      </div>
+    </div>
+    <button class="weapon-button" onclick="toggleInfo('comida')">
+      <img src="../assets/icons/hamburgue_carne.png" alt="ametista" class="s_icon"> 
+      <span>Comidas</span>
+    </button>
+    <div id="comida" class="food-info">
+      <div class="card-container">
+        <div class="card">
+          <img src="../assets/icons/hamburgue_carne.png" alt="neutro">
+          <h3>Hamburguer de Carne</h3>
+          <p>Feito com carne.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/hamburgue_vegetariano.png" alt="neutro">
+          <h3>Hamburguer Vegetariano</h3>
+          <p>Feito com mato.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/hamburgue_vegano.png" alt="neutro">
+          <h3>Hamburguer Vegano</h3>
+          <p>Feito com ???.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/barca_sushi.png" alt="neutro">
+          <h3>Barca de Sushi</h3>
+          <p>Demora bastante para comer, mas enche tudo.</p>
+        </div>
+        <div class="card">
+          <img src="../assets/icons/sushi.png" alt="neutro">
+          <h3>Sushi</h3>
+          <p>Não, não usa isso pra fazer a Barca de Sushi.</p>
+        </div>
+      </div>
+    </div>
     
   </section>
   <footer>
     <p>&copy; 2025 Corrupted Eyes Wiki. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    function toggleInfo(id) {
+      const infos = document.querySelectorAll('.food-info');
+      infos.forEach(info => {
+        if (info.id === id) {
+          if (!info.classList.contains('show')) {
+            info.classList.add('show');
+          } else {
+            info.classList.remove('show');
+          }
+        } else {
+          info.classList.remove('show');
+        }
+      });
+    }
+  </script>
 </body>
 </html>

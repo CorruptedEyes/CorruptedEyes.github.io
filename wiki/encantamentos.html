@@ -21,10 +21,227 @@
 
   <section id="features">
     <h2><img src="../assets/images/encantamentos.png" alt="ametista" class="s_icon"> --- Encantamentos --- <img src="../assets/images/encantamentos.png" alt="ametista" class="s_icon"></h2>
-    
+    <p>Informações sobre os encantamentos do datapack</p>
+
+    <button class="weapon-button" onclick="toggleInfo('weapon1')">
+      <img src="../assets/images/encantamentos.png" alt="ametista" class="s_icon"> 
+      <span>Encantamentos Elementais</span>
+    </button>
+    <div id="weapon1" class="weapon-info">
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion('carne')"><img src="../assets/icons/capsula_carne.png" alt="elemento" class="s_icon"> Encantamentos de Carne</div>
+        <div id="carne" class="accordion-content">
+          <div class="card-container">
+            <div class="card">
+              <img src="../assets/icons/capsula_carne.png" alt="Carnificina">
+              <h3>Carnificina</h3>
+              <p>Regeneração ao atacar. (Espadas)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion('escuridao')"><img src="../assets/icons/capsula_escuridao.png" alt="elemento" class="s_icon"> Encantamentos de Escuridão</div>
+        <div id="escuridao" class="accordion-content">
+          <div class="card-container">
+            <div class="card">
+              <img src="../assets/icons/capsula_escuridao.png" alt="Aspecto Sombrio">
+              <h3>Aspecto Sombrio</h3>
+              <p>Cegueira no inimigo e +10 de dano à noite. (Espadas)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_escuridao.png" alt="Aspecto Sombrio">
+              <h3>Visão Sombria</h3>
+              <p>Visão noturna em locais escuros ou a noite. (Capacete)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion('corrupcao')"><img src="../assets/icons/capsula_corrupcao.png" alt="elemento" class="s_icon"> Encantamentos de Corrupção</div>
+        <div id="corrupcao" class="accordion-content">
+          <div class="card-container">
+            <div class="card">
+              <img src="../assets/icons/capsula_corrupcao.png" alt="Corrupção">
+              <h3>Corrupção</h3>
+              <p>Dano em área espalhado. (Espadas)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_corrupcao.png" alt="Cristais">
+              <h3>Cristais</h3>
+              <p>Espinhos com Fraqueza II. (Armadura)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_corrupcao.png" alt="Extender Vida">
+              <h3>Extender Vida</h3>
+              <p>Aumenta vida máxima. (Armadura)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion('realidade')"><img src="../assets/icons/capsula_realidade.png" alt="elemento" class="s_icon"> Encantamentos de Realidade</div>
+        <div id="realidade" class="accordion-content">
+          <div class="card-container">
+            <div class="card">
+              <img src="../assets/icons/capsula_realidade.png" alt="Instável">
+              <h3>Instável</h3>
+              <p>Teleporta o inimigo ao receber dano. (Armadura)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_realidade.png" alt="Crescimento">
+              <h3>Crescimento</h3>
+              <p>Aumenta altura e atributos. (Peitoral)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_realidade.png" alt="Encolhimento">
+              <h3>Encolhimento</h3>
+              <p>Diminui altura e muda atributos. (Peitoral)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_realidade.png" alt="ChupsSpawn">
+              <h3>ChupsSpawn</h3>
+              <p>Chance de spawnar um Baiacu ao causar dano. (Machados)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion('caos')"><img src="../assets/icons/capsula_caos.png" alt="elemento" class="s_icon"> Encantamentos de Caos</div>
+        <div id="caos" class="accordion-content">
+          <div class="card-container">
+            <div class="card">
+              <img src="../assets/icons/capsula_caos.png" alt="Tapa Explosivo">
+              <h3>Tapa Explosivo</h3>
+              <p>Explosão de fogos ao lançar o tridente. (Tridentes)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_caos.png" alt="Proteção Surpresa">
+              <h3>Proteção Surpresa</h3>
+              <p>Chance de ganhar resistência, velocidade ou força ao receber dano. (Armadura)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_caos.png" alt="Inferno de Flechas">
+              <h3>Inferno de Flechas</h3>
+              <p>Flechas teleguiadas e disparos extras por nível. (Arcos)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_caos.png" alt="Deus do Trovão">
+              <h3>Deus do Trovão</h3>
+              <p>Raio gerado ao ataque caindo. (Machados e Marretas)</p>
+            </div>
+            <div class="card">
+              <img src="../assets/icons/capsula_caos.png" alt="Tormento">
+              <h3>Tormento</h3>
+              <p>Repulsão amplificada, equivalente a 10 níveis. (Espadas)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="weapon-button" onclick="toggleInfo('weapon2')">
+      <img src="../assets/images/encantamentos.png" alt="ametista" class="s_icon"> 
+      <span>Encantamentos Não Elementais</span>
+    </button>
+    <div id="weapon2" class="weapon-info">
+      <div class="card-container">
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Anti-Queda</h3>
+          <p>Anula totalmente o dano de queda. (Botas)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Perfurar Armadura</h3>
+          <p>Diminui a eficiencia da armadura do inimigo. (Espadas e Machados)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Toque de Entidade</h3>
+          <p>Aumenta a distancia de interação com entidades. (Espadas e Machados)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Experiencia</h3>
+          <p>Aumenta o ganho de XP ao matar entidades. (Espadas)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Alcance de Blocos</h3>
+          <p>Aumenta a distancia de interação com blocos. (Machados, Picaretas, Pás e Enxadas)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Peso-Leve</h3>
+          <p>Deixa a arma mais leve. (Espadas e Machados)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Flecha de Artificio</h3>
+          <p>Suas flechas explodem ao acertar (Arcos)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Salto de Cabra</h3>
+          <p>Aumenta a altura dos seus passos. (Calças)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Arremeço de Gravidade</h3>
+          <p>Cair de alturas muito altas, faz você causar dano em area. (Botas)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Proteção Magica</h3>
+          <p>Diminui o dano de coisas magicas. (Armadura)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Corredor</h3>
+          <p>Aumenta a velocidade de movimento (Calças)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/encantamentos.png" alt="neutro">
+          <h3>Maldição da Incompatibilidade</h3>
+          <p>Impede que novos encantamentos sejam adicionados ao item. (Tudo)</p>
+        </div>
+      </div>
+    </div>
   </section>
+
   <footer>
     <p>&copy; 2025 Corrupted Eyes Wiki. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    function toggleInfo(id) {
+      const infos = document.querySelectorAll('.weapon-info');
+      infos.forEach(info => {
+        if (info.id === id) {
+          if (!info.classList.contains('show')) {
+            info.classList.add('show');
+          } else {
+            info.classList.remove('show');
+          }
+        } else {
+          info.classList.remove('show');
+        }
+      });
+    }
+
+    function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>
