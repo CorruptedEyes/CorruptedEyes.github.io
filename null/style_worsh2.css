@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Pilot';
+  src: url('../assets/fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Monocrome';
+  src: url('../assets/fonts/Catacombs\ V1-0.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Pilot', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Fundo preto para dar o efeito de tela de VHS */
+  color: #5f2f56; /* Verde fosforescente para o efeito de texto típico de VHS */
+  text-align: center;
+  animation: flicker 0.1s infinite alternate; /* Efeito de flicker */
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  background: #000; /* Fundo preto para o cabeçalho */
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #5f2f56; /* Linha verde para destacar */
+}
+
+h1 {
+  color: #5f2f56; /* Cor verde fosforescente para o título */
+  text-shadow: 0 0 5px #5f2f56, 0 0 10px #5f2f56, 0 0 20px #5f2f56; /* Efeito de brilho para o título */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5f2f56; /* Cor do texto de navegação */
+  text-shadow: 0 0 5px #5f2f56;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #FF00FF; /* Mudança de cor ao passar o mouse */
+  text-shadow: 0 0 5px #FF00FF;
+}
+
+section {
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Pilot', sans-serif;
+  color: #5f2f56; /* Cor do texto em verde */
+  text-shadow: 0 0 5px #5f2f56, 0 0 10px #5f2f56;
+}
+
+.icon, .s_icon, .ss_icon {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+  filter: grayscale(100%) contrast(200%); /* Adiciona o efeito de preto e branco com contraste */
+}
+
+footer {
+  background: #000; /* Fundo preto no rodapé */
+  padding: 1rem;
+  font-family: 'Pilot', sans-serif;
+  text-align: center;
+  border-top: 1px solid #5f2f56; /* Linha verde em cima do rodapé */
+  animation: flicker 0.15s infinite alternate; /* Efeito de flicker mais intenso */
+}
+
+footer p {
+  color: #5f2f56; /* Cor do texto do rodapé */
+  text-shadow: 0 0 5px #5f2f56;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* Responsividade para telas menores */
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .icon, .s_icon, .ss_icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.container {
+  border: 2px solid #5f2f56;
+  padding: 20px;
+  box-shadow: 0 0 10px #5f2f56;
+}
+
+#screen {
+  height: 2rem;
+  width: 20rem;
+  margin: 10px auto;
+  border: 2px solid #5f2f56;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 5px #5f2f56;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.keypadnum {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.keypadextra {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid #5f2f56;
+  background-color: black;
+  color: #5f2f56;
+  box-shadow: 0 0 5px #5f2f56;
+  text-shadow: 0 0 15px #5f2f56, 0 0 20px #5f2f56;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  background-color: #5f2f56;
+  color: black;
+  text-shadow: 0 0 5px black;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.9);
+}

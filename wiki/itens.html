@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrupted Eyes Wiki</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1><img src="../assets/images/ametista.png" alt="ametista" class="icon"> Corrupted Eyes Wiki <img src="../assets/images/ametista.png" alt="ametista" class="icon" id="butao_bugado" onclick="mostrarCardbugado()"></h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../wiki.html">Recursos</a></li>
+        <li><a href="../download.html">Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="features">
+    <h2><img src="../assets/icons/capsula_corrupcao.png" alt="ametista" class="s_icon"> --- Itens --- <img src="../assets/icons/capsula_corrupcao.png" alt="ametista" class="s_icon"></h2>
+    <h3>-- Elementares --</h3>
+    <div class="card-container">
+      <div class="card">
+        <img src="../assets/icons/capsula_carne.png" alt="neutro">
+        <h3>Capsula de Carne</h3>
+        <p>Uma capsula com a forma mais pura do elemento "Carne".</p>
+      </div>
+      <div class="card">
+        <img src="../assets/icons/capsula_escuridao.png" alt="neutro">
+        <h3>Capsula de Escuridão</h3>
+        <p>Uma capsula com a forma mais pura do elemento "Escuridão".</p>
+      </div>
+      <div class="card">
+        <img src="../assets/icons/capsula_corrupcao.png" alt="neutro">
+        <h3>Capsula de Corrupção</h3>
+        <p>Uma capsula com a forma mais pura do elemento "Corrupção".</p>
+      </div>
+      <div class="card">
+        <img src="../assets/icons/capsula_realidade.png" alt="neutro">
+        <h3>Capsula de Realidade</h3>
+        <p>Uma capsula com a forma mais pura do elemento "Realidade".</p>
+      </div>
+      <div class="card">
+        <img src="../assets/icons/capsula_caos.png" alt="neutro">
+        <h3>Capsula de Caos</h3>
+        <p>Uma capsula com a forma mais pura do elemento "Caos".</p>
+      </div>
+    </div>
+    <h3>-- Não Elementares --</h3>
+    <div class="card-container">
+      <div class="card">
+        <img src="../assets/icons/liquidificador.png" alt="neutro">
+        <h3>Centrifuga</h3>
+        <p>utilizada para fazer sucos, basta jogar uma garrafa de agua, uma fruta, e a centrifuga no chão, e pronto!.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/icons/braco.png" alt="neutro">
+        <h3>Punho Extendedor</h3>
+        <p>Aumenta o alcance de interação com blocos e entidades.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/icons/netherite_sword.png" alt="neutro">
+        <h3>DragonBlade</h3>
+        <p>Espada extremamente poderosa e rara, criada por uma organização misteriosa, dizem que é a chave para um poder muito maior.</p>
+      </div>
+      <a class="bugado" id="card_bugado" href="../null/erro3482.html">
+        <div class="cardo" id="card_bugado">
+          <img id="changingImage" src="../assets/icons/capsula_corrupcao.png" alt="neutro">
+          <h3 id="changingTitle">Capsula de Corrupção</h3>
+          <p id="changingText">Uma capsula com a forma mais pura do elemento "Corrupção".</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Corrupted Eyes Wiki. Todos os direitos reservados.</p>
+  </footer>
+  <script>
+
+const images = [
+    "../assets/icons/bagas_brilhantes_licor.png",
+    "../assets/icons/bagas_licor.png",
+    "../assets/icons/barca_sushi.png",
+    "../assets/icons/braco.png",
+    "../assets/icons/capsula_caos.png",
+    "../assets/icons/capsula_carne.png",
+    "../assets/icons/capsula_corrupcao.png",
+    "../assets/icons/capsula_escuridao.png",
+    "../assets/icons/capsula_realidade.png",
+    "../assets/icons/hamburgue_carne.png",
+    "../assets/icons/hamburgue_vegano.png",
+    "../assets/icons/hamburgue_vegetariano.png",
+    "../assets/icons/honey_bottle.png",
+    "../assets/icons/liquidificador.png",
+    "../assets/icons/maca_dourada_licor.png",
+    "../assets/icons/maca_licor.png",
+    "../assets/icons/melancia_licor.png",
+    "../assets/icons/netherite_sword.png",
+    "../assets/icons/redbull_cenoura.png",
+    "../assets/icons/redbull.png"
+  ];
+
+    const titulos = [
+      "Heroi",
+      "Bruxa",
+      "Monstro",
+      "Morto-Vivo",
+      "Mentiroso",
+      "Ladrão",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "A Fenda",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "[ PROTOCOLO 9753 ]",
+      "O Padre",
+      "O Cientista",
+      "[ ANNA MILLIE ]",
+      "[ LUCIUS GRIM ]",
+      "[ HANNA ASMODEUS ]",
+      "[ AURORA MOON ]",
+      "[ ARTHUR PYREE ]",
+      "[ MARLAY SHADOWMOON ]",
+      "[ ANNA MILLIE ]",
+      "[ LUCIUS GRIM ]",
+      "[ HANNA ASMODEUS ]",
+      "[ AURORA MOON ]",
+      "[ ARTHUR PYREE ]",
+      "[ MARLAY SHADOWMOON ]"
+    ]
+    const texts = [
+    "34 mortos, precisamos de suporte rapido! estamos em desvantagem.",
+    "o Experimento Duas Caras desapareceu após uma tragédia ocorrida na Base 153.",
+    "Marley Shadowmoon, traidor miseravel.",
+    "O servo perfeito.",
+    "A culpa era dos que semearam mentiras em sua mente.",
+    "Marco Bartolomeu, Larissa Melo, Guilherme Asmodeus e Arthur Pyree",
+    "Aqueles que morrem estão virando estatuas, o que fizeram? porque isso?",
+    "Padre, você nos abandonou padre.",
+    "3579.2 desapareceu, procurem imediatamente por ele.",
+    "O protocolo é ativado automaticamente segundos após o 3579.2 ser finalizado",
+    "3579.2 nos impede de se aproximar da ilha artificial, e recuperar as pessoas desaparecidas.",
+    "[ PROTOCOLO 9753 ]",
+    "LUCIUS GRIM, Experimento 1001, foi localizado em zona urbana proxima, enviem uma equipe altamente preparada para o local urgentemente.",
+    "Carne - tudo que toca, contamina.",
+    "Escuridão - a coisa que fica no escuro.",
+    "Corrupção - o diabo criado pelo homem.",
+    "Realidade - nada é real.",
+    "Caos - o inferno.",
+    "um mago ancestral conseguiu romper as barreiras da realidade"
+  ];
+
+  let index = 0;
+  let ind = 0;
+  const textElement = document.getElementById('changingText');
+  const titleElement = document.getElementById('changingTitle');
+  const imageElement = document.getElementById('changingImage');
+
+  function mostrarCardbugado(){
+    const botao = document.getElementById('butao_bugado');
+    const cardsBugados = document.querySelectorAll('#card_bugado');
+
+    cardsBugados.forEach(cardBugado => {
+    cardBugado.style.display = 'block';
+    });
+
+    botao.removeAttribute('id');
+  }
+
+  setInterval(() => {
+    index = Math.floor(Math.random() * texts.length);
+    textElement.textContent = texts[index];
+
+    ind = Math.floor(Math.random() * titulos.length);
+    titleElement.textContent = titulos[ind];
+
+    const imageIndex = Math.floor(Math.random() * images.length);
+    imageElement.src = images[imageIndex];
+  }, 500);
+  </script>
+</body>
+</html>
