@@ -268,6 +268,31 @@ footer {
   100% { opacity: 100%; }
 }
 
+.weapon-buttono {
+  font-family: 'Minecraft', sans-serif;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #260458;
+  color: #7d57c1;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  animation: opa_box 0.1s infinite;
+}
+
+.weapon-buttono:hover {
+  background-color: #f0e6ff;
+  color: #260458;
+  transition: all 0.3s ease;
+}
+
 .cardo {
   border: 3px solid #ff00d9;
   border-radius: 5px;
@@ -317,6 +342,10 @@ footer {
 }
 
 #butao_bugado:hover {
+  animation: glitch_box 0.2s infinite;
+}
+
+#bugado {
   animation: glitch_box 0.2s infinite;
 }
 

@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1><img src="../assets/images/ametista.png" alt="ametista" class="icon"> Corrupted Eyes Wiki <img src="../assets/images/ametista.png" alt="ametista" class="icon"></h1>
+    <h1><img src="../assets/images/ametista.png" alt="ametista" class="icon" id="butao_bugado" onclick="mostrarCardbugado()"> Corrupted Eyes Wiki <img src="../assets/images/ametista.png" alt="ametista" class="icon"></h1>
     <nav>
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -149,6 +149,41 @@
       <p>A terceira e ultima etapa do desafio, força você a ser atingido por um raio, durante um <a href="../wiki/eventos.html">Evento de Anomalia</a>.</p>
       <p>Após completar todas as etapas, você precisa estar com uma <b>DragonBlade</b> e um <b>Para-raio</b> no seu inventario, esses itens então seram removidos, e você receberá as <b>Manoplas Artificiais</b> prontas para serem usadas.</p>
     </div>
+    <button id="card_bugado" class="weapon-buttono" onclick="toggleInfo('weapon4')">
+      <img src="../assets/icons/olhos_meianoite.png" alt="ametista" class="s_icon"> 
+      <span>Olhos da Meia noite</span>
+    </button>
+    <div id="weapon4" class="weapon-info">
+        <h2>-- Descrição --</h2>
+        <p>Uma espada feita de corrupção, com diversos olhos espalhados, dizem que todas as mortes causadas pelo Experimento 3579 e pelo 3579.2, ficaram aprisionadas nessa espada, sem poder descansar em paz, a agonia das almas é o que da forças para a espada manter essa forma, e ter todo o seu poder</p>
+        <h2>-- Os olhos da Meia noite --</h2>
+        <p>A espada carrega uma energia de corrupção imensa, a cada 15s você pode apertar com o botão direito para disparar um projetil lento de corrupção, o projetil dispara mini raios, perfura inimigos, ao atingir um bloco, ele explode numa rajada de energia, causando alto dano a inimigos proximos.</p>
+        <h2>-- Como conseguir os Olhos da Meia noite --</h2>
+        <p>A espada pode ser obtida apos completar o "Desafio da Foice Instavel", um desafio de 3 etapas que devem ser feitas em sequencia, apos as etapas terem sido completadas, o usuario ira receber a foice automaticamente, e o desafio é concluido, somente é possivel concluir 1 dos 3 desafios das armas, quando você conclui algum desafio, o progresso dos outros 2 é zerado, e você não pode mais iniciar nenhum outro desafio, então escolha com certeza qual das 3 armas você vai querer pegar, porque somente vai poder pegar 1 delas.</p>
+      <h3>--- Como pegar o "Desafio da Foice Instavel"</h3>
+      <p>Para dar inicio ao desafio, você precisa localizar a <a href="../wiki/estruturas.html">Torre Instavel</a>, ao entrar dentro da estrutura, você conseguira a primeira conquista do desafio, que indica que você iniciou ele.</p>
+      <img src="../assets/images/conquista_foice.png" alt="ametista">
+      <p>Após isso, você pode começar a fazer as 3 etapas do desafio, não é possivel tentar agilizar o progresso de outra etapa</p>
+      <h3>--- Etapa 1 : Vicio em alcool ---</h3>
+      <p>A primeira etapa do desafio, igual ao original, força você a craftar todas as bebidas alcoolicas do datapack, o mesmo objetivo que outra conquista ai, então você consegue se basear por ela.</p>
+      <h3>--- Etapa 2 : Fragmentos da Realidade ---</h3>
+      <p>A segunda etapa do desafio, igual ao original, força você a obter 5 fragmentos de realidade, um item até que bem raro, e bem misterioso para se obter, você consegue esse item realizando atividades diferentes, porem misteriosas.</p>
+      <h3>--- Etapa 3 : Sentinelas ---</h3>
+      <p>A terceira e ultima etapa do desafio, diferente do original, força você a matar 5 <a href="../wiki/mobs.html">Sentinelas</a> durante um <a href="../wiki/eventos.html">Evento de Anomalia</a> o que torna bem mais dificil, considerando que eles somente spawnam em 1 estrutura.</p>
+      <p>Após completar todas as etapas, você precisa estar com uma <b>DragonBlade</b> e uma <b>Capsula de Corrupção/b> no seu inventario, esses itens então seram removidos, e você receberá os <b>Olhos da Meia-noite</b> prontos para serem usados.</p>
+    </div>
+    <button id="card_bugado" class="weapon-buttono" onclick="toggleInfo('weapon5')">
+      <img src="../assets/icons/trident.png" alt="ametista" class="s_icon"> 
+      <span>Etercristal</span>
+    </button>
+    <div id="weapon5" class="weapon-info">
+    </div>
+    <button id="card_bugado" class="weapon-buttono" onclick="toggleInfo('weapon6')">
+      <img src="../assets/icons/cronoenergia.png" alt="ametista" class="s_icon"> 
+      <span>Cronoenergia Arcana</span>
+    </button>
+    <div id="weapon6" class="weapon-info">
+    </div>
   </section>
 
   <footer>
@@ -170,6 +205,17 @@
         }
       });
     }
+
+    function mostrarCardbugado(){
+    const botao = document.getElementById('butao_bugado');
+    const cardsBugados = document.querySelectorAll('#card_bugado');
+
+    cardsBugados.forEach(cardBugado => {
+    cardBugado.style.display = 'block';
+    });
+
+    botao.removeAttribute('id');
+  }
   </script>
 </body>
 </html>
