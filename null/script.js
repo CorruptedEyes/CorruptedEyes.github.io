@@ -29,7 +29,7 @@ function submitCode() {
     default:
       playSound('audio/error.mp3');
       break;
-  }
+    }
   clearInput();
 }
 
